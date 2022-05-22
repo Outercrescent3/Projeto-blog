@@ -65,18 +65,32 @@
  section{
      width: 70%;
      margin: auto;
-     background-color: #999999;
-     min-height: 800px;
+     margin-bottom: 65px;
      margin-top: 75px;
  }
 
  .foto{
-     height: 96px;
-     width: 96px;
-     background-color: #4030ab;
+     width: 50% auto;
+     float: left;
+     padding: 5px;
+     border-radius: 5px;
+     border: 2px solid var(--cor2);
+     background-color: var(--cor1);
+
+     /*margin-right: 15px;*/
  }
-
-
+ article{
+     padding: 15px;
+     margin: 10px 0;
+     overflow: hidden;
+ }
+ h1{
+     margin-bottom: 25px;
+ }
+ p{
+     text-align: justify;
+    line-height: 35px;
+ }
 
  footer{
      width: 100%;
@@ -88,4 +102,65 @@
      position: fixed;
      bottom: 0;
  }
+
+ /* === Media Queries === */
+
+ /* Extra small (xs): Smartphone (portrair - retrato)*/
+ @media (min-width: 360px) {
+    section{
+        width: 90%;
+        background-color: aqua;
+        margin-top: 110px;
+    }
+    img{
+        width: 96%;
+    }
+ }
+
+ /*Small (sm): Smartphone (landscape - paisagem */
  
+ @media (min-width: 576px) {
+    section{
+        width: 96%;
+        margin-top: 110px;
+        background-color: #ffd970;
+    }
+    img{
+        width: 35%;
+    }
+    .foto{
+        margin-right: 15px;
+    }
+ }
+
+ /*Medium (md): Tablet */
+
+ @media (min-width: 768px) {
+    section{
+        width: 80%;
+        margin-top: 75px;
+        background-color: #ff70f3;
+    }
+    img{
+        width: 25%;
+    }
+ }
+
+ /*Large (lg):  Notbook */
+
+ @media (min-width: 992px) {
+    section{
+        background-color: #7085ff;
+    }
+    img{
+        width: 15%;
+    }
+ }
+
+  /* Extra Large (xl):  Computador */
+
+ @media (min-width: 1200px) {
+    section{
+        background-color: #f9f9f9;
+    }
+ }
